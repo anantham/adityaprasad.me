@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -123,9 +123,9 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white; 
+  color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: white;
+  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -136,12 +136,10 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 28px;
-  color: black;
+  font-size: 40px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
-  color: black;
 }
 @media (min-width: 768px) {
   .intro {
@@ -150,11 +148,10 @@ a:focus {
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
-    color: black;
+    text-align: left;
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
-    color: black;
   }
 }
 .btn-circle {

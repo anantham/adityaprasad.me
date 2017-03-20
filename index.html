@@ -19,8 +19,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-	<!-- Theme CSS -->
-	<link href="css/cssminifierGrayScale.min.css" rel="stylesheet">
+	<!-- Theme CSS TODO learn gulp and get minified version here-->
+	<link href="css/grayscale.css" rel="stylesheet">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,7 +95,7 @@
 
 	<!-- show different quote at every page load - I changed this <p class="intro-text"></p> -->
 	<script language="JavaScript" type="text/javascript">
-		var textToShow = ['"I have no special talent. I am only passionately curious." - Albert Einstein', '"It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment" - Carl Friedrich Gauss', '"The good stories--you understand them, but the great stories - they understand you"', '"The art of writing is the art of discovering what you believe" — Gustave Flaubert', '"I never trust someone who\'s more excited about success than about doing the thing they want to be successful at" - xkcd', '"When we say we are a pile of atoms, we do not mean we are merely a pile of atoms, because a pile of atoms which is not repeated from one to the other might well have the possibilities which you see before you in the mirror" - Feynman', '"Living an ethical life means we strive to thwart our baser instincts — those that cause harm and injury to others — and to cultivate those behaviors and attitudes that promote the well-being of ourselves and others.” — Ashley Capps', '"He who fights with monsters should be careful lest he thereby become a monster. And if thou gaze long into an abyss, the abyss will also gaze into thee" - Friedrich Nietzsche', '"Man is the measure of all things" - Protagoras', '"Your actions speak so loudly, I can not hear what you are saying" - Ralph Waldo Emerson', '"The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation." - Henry David Thoreau', 'Be the change that you wish to see in the world.” - Mahatma Gandhi', '"Before you start some work, always ask yourself three questions - Why am I doing it, What the results might be and Will I be successful. Only when you think deeply and find satisfactory answers to these questions, go ahead" - Chanakya','"The unexamined life is not worth living" - Socrates']
+		var textToShow = ['"I have no special talent. I am only passionately curious" - Albert Einstein', '"It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment" - Carl Friedrich Gauss', '"The good stories - you understand them, but the great stories - they understand you"', '"The art of writing is the art of discovering what you believe" — Gustave Flaubert', '"I never trust someone who\'s more excited about success than about doing the thing they want to be successful at" - xkcd', '"When we say we are a pile of atoms, we do not mean we are merely a pile of atoms, because a pile of atoms which is not repeated from one to the other might well have the possibilities which you see before you in the mirror" - Feynman', '"Living an ethical life means we strive to thwart our baser instincts — those that cause harm and injury to others — and to cultivate those behaviors and attitudes that promote the well-being of ourselves and others.” — Ashley Capps', '"He who fights with monsters should be careful lest he thereby become a monster. And if thou gaze long into an abyss, the abyss will also gaze into thee" - Friedrich Nietzsche', '"Man is the measure of all things" - Protagoras', '"Your actions speak so loudly, I can not hear what you are saying" - Ralph Waldo Emerson', '"The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation" - Henry David Thoreau', 'Be the change that you wish to see in the world.” - Mahatma Gandhi', '"Before you start some work, always ask yourself three questions - Why am I doing it, What the results might be and Will I be successful. Only when you think deeply and find satisfactory answers to these questions, go ahead" - Chanakya','"The unexamined life is not worth living" - Socrates','"A joke only lasts for a moment, if it leaves a misunderstanding, it becomes a lie" - Oreki Hontarou','不患人之不己知，患不知人也。- "I am not bothered by the fact that I am not understood. I am bothered when I do not know others" - Confucius','邦有道貧且賤焉恥也，邦無道富且貴焉恥也。- "When a country is well governed, poverty and a mean condition are things to be ashamed of. When a country is ill governed, riches and honor are things to be ashamed of" - Confucius','Somebody asked Confucious once, one of his students; they said "What happens, Master Kong," which was his real name, "when we die?" He said, "Why do you ask about something we know nothing about, when you don\'t even ask about life, which we do have to deal with?" He was not going to answer that question, because there was none','Autoritätsdusel ist der größte Feind der Wahrheit - "Unthinking respect for authority is the greatest enemy of truth" - Albert Einstein','"The value of a college education is not the learning of many facts but the training of the mind to think" - Albert Einstein']
 
 			$(document).ready(function() {
 				var selectedQuote = textToShow[Math.floor(Math.random()*textToShow.length)]
@@ -110,7 +110,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="row-md-8 col-md-offset-2">
-						<h1 class="brand-heading">Aditya P</h1>
+						<h1 class="brand-heading">Aditya</h1>
 						<quote></quote></div>
 						<a href="#about" class="btn btn-circle page-scroll">
 							<i class="fa fa-angle-double-down animated"></i>
@@ -127,7 +127,7 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Who am I?</h2>
 				<p>Hi there, my name is Aditya A Prasad. This is my personal website, its not complete yet but it will be getting done soon.</p>
-				<p>I am currently in my last semester of B.Tech - <a href="https://en.wikipedia.org/wiki/Instrumentation_and_control_engineering">ICE</a> in <a href="http://www.nitt.edu/">NIT Trichy</a></p>
+				<p>I am currently in my last semester of B.Tech - <a href="https://en.wikipedia.org/wiki/Instrumentation_and_control_engineering">I.C.E.</a> in <a href="http://www.nitt.edu/">NIT Trichy</a></p>
 				<p>My interests span <a href="https://myanimelist.net/profile/Aditya8795">Anime</a>, Wuxia, Data mining, Probability theory, Linear algebra, Metaphysics, Philosophy etc.</p>
 			</div>
 		</div>
@@ -139,21 +139,20 @@
 			<div class="container">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h2>My Personal Blog</h2>
-					<p>You can read about stuff that captivates me such that I actually sit down and make a blog post on it.</p>
-					<a href="http://cdn1-www.comingsoon.net/wp-content/themes/comingsoon/images/cs_default_image.jpg" class="btn btn-default btn-lg">Visit Blog</a>
+					<p>You can read about my take on various things under the sun.</p>
+					<a href="https://blog.adityaprasad.me/" class="btn btn-default btn-lg">Visit Blog</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Contact Section -->
+	<!-- Contact Section TODO Add icons-->
 	<section id="contact" class="container content-section text-center">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Contact Me</h2>
-				<p>Feel free to get in touch. Maybe suggest an anime, manga or novel or to just say hello! I wont bite :p</p>
-				<p><a href="mailto:adityaarpitha@gmail.com">adityaarpitha@gmail.com</a>
-				</p>
+				<p>Feel free to get in touch. Maybe suggest an anime, <br> manga or novel or to just say hello! I wont bite 😜</p>
+
 				<ul class="list-inline banner-social-buttons">
 					<li>
 						<a href="https://twitter.com/AdityaPrasadO" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -168,6 +167,25 @@
 						<a href="http://stackoverflow.com/users/2104073/aditya" class="btn btn-default btn-lg"> <span class="network-name">StackOverflow</span></a>
 					</li>
 				</ul>
+
+				<ul class="list-inline banner-social-buttons">	
+					<li>
+						<a href="mailto:adityaarpitha@gmail.com" class="btn btn-default btn-lg"> <span class="network-name">Gmail</span></a>
+					</li>
+					<li>
+						<a href="https://t.me/everythingisrelative" class="btn btn-default btn-lg"> <span class="network-name">Telegram</span></a>
+					</li>
+					<li>
+						<a href="https://www.quora.com/profile/Aditya-Prasad-23" class="btn btn-default btn-lg"> <span class="network-name">Quora</span></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/adityaarpithaprasad" class="btn btn-default btn-lg"> <span class="network-name">FaceBook</span></a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/c/AdityaPrasad007" class="btn btn-default btn-lg"> <span class="network-name">YouTube</span></a>
+					</li>
+				</ul>
+
 			</div>
 		</div>
 	</section>
@@ -194,10 +212,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 	<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9I6hEpXPwMb80GTHHSHs1HfpJmBfVhy0&sensor=false"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9I6hEpXPwMb80GTHHSHs1HfpJmBfVhy0	"></script>
 
-	<!-- Theme JavaScript -->
-	<script src="js/grayscale.min.js"></script>
+	<!-- Theme JavaScript TODO learn gulp and get minified version here -->
+	<script src="js/grayscale.js"></script>
 
 </body>
 
